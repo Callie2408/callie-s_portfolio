@@ -35,7 +35,7 @@ Analyse ticket data
 - Monthly revenue trend
 
 <p align="center">
-  <img src="Ticket-Dashboard.png" width="600">
+  <img src="Ticket-Dashboard.png" width="900">
 </p>
 
 
