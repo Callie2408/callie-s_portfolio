@@ -17,12 +17,11 @@ visual complexity.
 
 ---
 
-## Project 1: Sales Performance Analysis
+## Project 1: Ticket Dashboard
 
 **Objective**
 
-Analyze sales performance across regions and products to support
-business decision-making.
+Analyse ticket data 
 
 **Key questions**
 - Which regions generate the most revenue?
@@ -34,6 +33,10 @@ business decision-making.
 - Revenue by product
 - Monthly revenue trend
 
+
+
+
+
 **Skills demonstrated**
 - Data modeling
 - DAX measures
@@ -42,18 +45,4 @@ business decision-making.
 
 ---
 
-## Project 2: Customer Analysis
 
-**Objective**
-
-Understand customer behavior and spending patterns by segment.
-
-**Key questions**
-- Which customer segments generate the most value?
-- How does average spend differ by segment?
-- How many orders are placed per segment?
-
-**Skills demonstrated**
-- Aggregations in DAX
-- Segment-level analysis
-- Report usability and clarity
