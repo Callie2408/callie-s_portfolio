@@ -40,6 +40,11 @@ Analyse ticket data
 
 
 
+<p align="center">
+  <img src="Data-Modelling.png" width="900">
+</p>
+
+
 **Skills demonstrated**
 - Data modeling
 - DAX measures
