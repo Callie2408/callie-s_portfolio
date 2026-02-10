@@ -28,12 +28,15 @@ Analyse ticket data
 - Which products drive overall performance?
 - How does revenue trend over time?
 
+
 **Core visuals**
 - Revenue by region
 - Revenue by product
 - Monthly revenue trend
 
-
+<p align="center">
+  <img src="Ticket-Dashboard.png" width="600">
+</p>
 
 
 
@@ -42,6 +45,8 @@ Analyse ticket data
 - DAX measures
 - Interactive filtering
 - Clean report layout
+
+
 
 ---
 
