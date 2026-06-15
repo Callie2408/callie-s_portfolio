@@ -47,6 +47,12 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 - A small number of team members handle a disproportionate number of tickets
 - Closure rates closely track ticket creation, indicating steady backlog management
 
+**Recommendations**
+- Investigate teams with lower SLA performance to identify root causes of delays
+- Review ticket distribution across agents to ensure balanced workload
+- Analyse periods with SLA dips to determine if driven by volume spikes or complexity
+- Introduce early warnings or alerts for tickets at risk of breaching SLA
+
 
 **Skills & Tools demonstrated**
 - Power BI
