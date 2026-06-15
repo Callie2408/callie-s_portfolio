@@ -56,6 +56,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
 **Skills & Tools demonstrated**
 - Power BI
+- Power Query (to cleanse the data)
 - DAX (measures, calculated columns)
 - Data modelling
 - Interactive dashboards (filters, drill-throughs)
