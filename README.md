@@ -13,12 +13,13 @@ business-oriented data analysis and reporting.
 
 **Objective**
 
-Analyse ticket data 
+Analyse Ticket data to monitor SLA performance, identify delays in resolution, and highlight trends in ticket volume to support operational decision-making.
 
 **Key questions**
-- Are KPIs being met? - Are tickets being assessed within 2 days and being completed before their due date?
-- Are tickets being evenly distributed to team members?
-- Are tickets volumes increasing over time?
+- Are SLAs being met (assessment within 2 days, resolution before due date)?
+- Which team members handle the highest ticket volumes?
+- Is ticket demand increasing over time?
+- Where are delays occurring in the ticket lifecycle?
 
 
 **Core visuals**
