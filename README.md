@@ -26,23 +26,33 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 - Tickets volumes that are Assigned, Opened and Closed
 - KPI percentages
 
+
 <p align="center">
   <img src="Ticket-Dashboard.png" width="900">
 </p>
 
+**Data Model**
 
+- Star schema structure linking ticket fact table to dimensions (date, tickets, measures). Designed to enable efficient filtering and time-based analysis
 
 <p align="center">
   <img src="Data-Modelling.png" width="900">
-</p>
 
 
-**Skills demonstrated**
+
+  
+**Key Insights**
+- Majority of tickets meet SLA for resolution, but assessment within 2 days shows occasional drops (~94% in some months)
+- Ticket volume is relatively stable with slight monthly fluctuations
+- A small number of team members handle a disproportionate number of tickets
+- Closure rates closely track ticket creation, indicating steady backlog management
+
+
+**Skills & Tools demonstrated**
+- Power BI
+- DAX (measures, calculated columns)
 - Data modelling
-- DAX measures and calculated columns
-- Interactive filtering
-- Drill-throughs
-- Clean report layout
+- Interactive dashboards (filters, drill-throughs)
 
 
 
