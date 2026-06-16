@@ -91,7 +91,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
 
 <p align="center">
-  <img src="Ticket-Dashboard.png" width="900">
+  <img src="Dashboard.png" width="900">
 </p>
 
 **Data Model**
