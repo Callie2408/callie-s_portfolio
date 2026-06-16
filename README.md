@@ -33,7 +33,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
 **Data Model**
 
-- Star schema structure linking ticket fact table to dimensions (date, tickets, measures). Designed to enable efficient filtering and time-based analysis
+- Star schema structure linking ticket fact table to dimension tables. Designed to enable efficient filtering and time-based analysis
 
 <p align="center">
   <img src="Data-Modelling.png" width="900">
