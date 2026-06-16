@@ -9,11 +9,11 @@ business-oriented data analysis and reporting.
 
 ---
 
-## Ticket Dashboard
+## SLA Performance & Ticket Management Dashboard
 
 **Objective**
 
-Analyse Ticket data to monitor SLA performance, identify delays in resolution, and highlight trends in ticket volume to support operational decision-making.
+Analyse Ticket data to monitor SLA performance, identify delays in resolution, and highlight trends in ticket volume to support operational decision-making. 
 
 **Key questions**
 - Are SLAs being met (assessment within 2 days, resolution before due date)?
@@ -33,7 +33,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
 **Data Model**
 
-- Star schema structure linking ticket fact table to dimension tables. Designed to enable efficient filtering and time-based analysis
+- Star schema structure linking ticket fact table to dimension tables. Designed to enable efficient filtering and time-based analysis. Data was merged and cleansed in Power Query.
 
 <p align="center">
   <img src="Data-Modelling.png" width="900">
@@ -42,7 +42,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
   
 **Key Insights**
-- Majority of tickets meet SLA for resolution, but assessment within 2 days shows occasional drops (~94% in some months). A KPI Alert was produced in Power BI service to notify managers of KPI Failures.
+- Majority of tickets meet SLA for resolution, but assessment within 2 days shows occasional drops (~94% in some months). A KPI alert was created in Power BI Service to notify managers of SLA breaches
 - Ticket volume is relatively stable with seasonal fluctuations around August and December.
 - A small number of team members handle a disproportionate number of tickets
 - Closure rates closely track ticket creation, indicating steady backlog management
