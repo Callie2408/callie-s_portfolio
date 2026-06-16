@@ -46,12 +46,15 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 - Ticket volume is relatively stable with slight monthly fluctuations
 - A small number of team members handle a disproportionate number of tickets
 - Closure rates closely track ticket creation, indicating steady backlog management
+- Tickets were found to be out of SLA incorrectly, due to different SLA definitions between teams.
 
 **Recommendations**
-- Investigate teams with lower SLA performance to identify root causes of delays
-- Review ticket distribution across agents to ensure balanced workload
+- Investigate teams / team members with lower SLA performance to identify root causes of delays
+- Review ticket distribution across employees to ensure balanced workload
 - Analyse periods with SLA dips to determine if driven by volume spikes or complexity
 - Introduce early warnings or alerts for tickets at risk of breaching SLA
+- Introduce a consistent KPI definition across all teams to standardise performance reporting
+
 
 
 **Skills & Tools demonstrated**
