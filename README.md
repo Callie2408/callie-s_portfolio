@@ -42,7 +42,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
   
 **Key Insights**
-- Majority of tickets meet SLA for resolution, but assessment within 2 days shows occasional drops (~94% in some months)
+- Majority of tickets meet SLA for resolution, but assessment within 2 days shows occasional drops (~94% in some months). A KPI Alert was produced in Power BI service to notify managers of KPI Failures.
 - Ticket volume is relatively stable with slight monthly fluctuations
 - A small number of team members handle a disproportionate number of tickets
 - Closure rates closely track ticket creation, indicating steady backlog management
@@ -56,7 +56,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
 **Skills & Tools demonstrated**
 - Power BI
-- Power Query (to cleanse the data)
+- Power Query (to cleanse and merge the data)
 - DAX (measures, calculated columns)
 - Data modelling
 - Interactive dashboards (filters, drill-throughs)
