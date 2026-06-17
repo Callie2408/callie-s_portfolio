@@ -106,9 +106,23 @@ Standardised and cleaned the data across multiple datasets in Power Query. This 
 - Developed a star schema for improved performance and scalability. Integrated additional datasets (contract pipeline / assigned hours) to enable forecast comparisons. Established relationships using unique keys and validated join integrity
 
 <p align="center">
-  <img src="Data-Modelling.png" width="900">
+  <img src="Data Model - Resourcing Dashboard.png" width="900">
 
 
+**DAX Calculations**
+- Calculated the % of codes booked that are recoverable.
+  
+<p align="center">
+  <img src="DAX - Resourcing Dashboard.png" width="900">
+
+<br>
+<br>
+<br>
+
+- Calculates the volume of contracts booked.
+  
+<p align="center">
+  <img src="DAX 2 - Resourcing Dashboard.png" width="900">
 
   
 **Key Insights**
