@@ -74,21 +74,32 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 <br>
 <br>
 
-## Dashboard 2
+## Time Booking Performance & Resource Optimisation Dashboard
 
 **Objective**
 
-#
+Deliver a scalable self-service solution through Power BI that replaces manual Excel reporting, driving real-time visibility of time booking and enabling better resourcing decisions, improved utilisation, and stronger financial control.
 
 **Key questions**
-- #
+- Are employees overbooking or underbooking against contracted hours?
+- Which contracts are over- or under-resourced?
+- How much time is booked to recoverable vs non-recoverable (overhead) codes?
+- Who has missing or late timesheet submissions?
+- How does actual booking compare to forecasted/assigned hours?
+- Which teams or individuals are driving discrepancies?
 
 
 
-**Core visuals**
-- #
+**Data Cleanse**
+- Standardised and cleaned inconsistent JA codes across multiple datasets
+- Resolved missing/null entries and removed duplicate records from system exports
+- Normalised employee and contract data to ensure accurate joins across sources
+- Transformed date fields to support time-based analysis (weekly/monthly trends)
+- Optimised the data model by validating mappings, categorising recoverable vs overhead hours, and reducing unnecessary columns/cardinality
 
 
+
+**Core Visuals**
 
 <p align="center">
   <img src="Timesheet Dashboard.png" width="900">
@@ -96,7 +107,7 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
 **Data Model**
 
-- #
+- Developed a star schema for improved performance and scalability. Integrated additional datasets (contract pipeline / assigned hours) to enable forecast comparisons. Established relationships using unique keys and validated join integrity
 
 <p align="center">
   <img src="Data-Modelling.png" width="900">
@@ -105,15 +116,40 @@ Analyse Ticket data to monitor SLA performance, identify delays in resolution, a
 
   
 **Key Insights**
-- #
+- A significant proportion of hours were consistently booked to overhead rather than recoverable work
+- Multiple contracts showed persistent underbooking, indicating potential resourcing gaps
+- A small number of employees contributed disproportionately to overbooking instances
+- Certain JA codes (e.g. support/non-productive) dominated time allocation
+- Forecast vs actual analysis highlighted misalignment between planned and delivered effort
+- Booking compliance varied significantly between teams, highlighting inconsistent behaviours
+- Certain JA codes were misaligned to overhead or recoverable
+
+
 
 **Recommendations**
-- #
+- Strengthen governance through standardised JA codes, improved booking practices, and clear categorisation of overhead, recoverable, and customer work
+- Introduce monitoring to drive accountability and visibility of booking behaviour
+- Use alerts to proactively flag missing, late, or non-compliant timesheet entries
+- Investigate underbooked contracts to determine whether there are resourcing gaps or reduced demand are the root cause
+- Analyse high overhead usage at employee level to identify opportunities to improve utilisation and financial performance
 
 
 
 **Skills & Tools demonstrated**
-- #
+- Power BI (data modelling, DAX, visual design, performance optimisation)
+- Power Query (data transformation, cleansing, merging datasets)
+- DAX (advanced measures, context manipulation, KPI logic)
+- Data Modelling (star schema, relationships, optimisation techniques)
+- Stakeholder Management (requirements gathering, iterative delivery, feedback loops)
+- Data Analysis (identifying trends, anomalies, and actionable insights)
+- Automation Mindset (eliminating manual reporting processes)
+- Business Understanding (resource management, utilisation, financial governance)
 
 
+<br>
+<br>
+<br>
 
+---
+
+<br>
