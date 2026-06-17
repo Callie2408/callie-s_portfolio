@@ -91,12 +91,8 @@ Deliver a scalable self-service solution through Power BI that replaces manual E
 
 
 **Data Cleanse**
-- Standardised and cleaned inconsistent JA codes across multiple datasets
-- Resolved missing/null entries and removed duplicate records from system exports
-- Normalised employee and contract data to ensure accurate joins across sources
-- Transformed date fields to support time-based analysis (weekly/monthly trends)
-- Optimised the data model by validating mappings, categorising recoverable vs overhead hours, and reducing unnecessary columns/cardinality
 
+Standardised and cleaned the data across multiple datasets in Power Query. This included removing duplicate entries, normalising columns to ensure accurate joins, transforming date field to support time-based analysis, validating mappings and reducing unnecessary columns/ cardinality
 
 
 **Core Visuals**
@@ -138,11 +134,8 @@ Deliver a scalable self-service solution through Power BI that replaces manual E
 **Skills & Tools demonstrated**
 - Power BI (data modelling, DAX, visual design, performance optimisation)
 - Power Query (data transformation, cleansing, merging datasets)
-- DAX (advanced measures, context manipulation, KPI logic)
 - Data Modelling (star schema, relationships, optimisation techniques)
 - Stakeholder Management (requirements gathering, iterative delivery, feedback loops)
-- Data Analysis (identifying trends, anomalies, and actionable insights)
-- Automation Mindset (eliminating manual reporting processes)
 - Business Understanding (resource management, utilisation, financial governance)
 
 
