@@ -165,60 +165,74 @@ Data has been anonymised
 <br>
 
 
-## SLA Performance & Ticket Management Dashboard
+## Product Data Quality & Pricing Analysis
 
 **Objective**
 
-Analyse Ticket data to monitor SLA performance, identify delays in resolution, and highlight trends in ticket volume to support operational decision-making. 
+Improve data quality across product data and perform SQL-based analysis to enable pricing and demand insights across a product portfolio.
 
 **Key questions**
-- Are SLAs being met (assessment within 2 days, resolution before due date)?
-- Which team members handle the highest ticket volumes?
-- Is ticket demand increasing over time?
-- Where are delays occurring in the ticket lifecycle?
 
+- Are there data quality issues impacting reporting and analysis?
+- Which product categories show the greatest variation in pricing?
+- Are there gaps in price coverage across categories (low vs high cost offerings)?
+- Which products demonstrate consistently high demand?
+- Is critical metadata (e.g. product introduction year) complete and reliable?
+- How can data be standardised to support consistent downstream reporting?
 
-**Core visuals**
-- Tickets volumes that are Assigned, Opened and Closed
-- KPI percentages
+**Data Cleanse**
+
+Standardised and cleaned the dataset using SQL transformations to ensure consistency and reliability for analysis. This included identifying missing critical fields, handling null values, and applying business rules to produce an analysis-ready dataset without modifying the source table.
+- Replaced missing categorical values with ‘Unknown’
+- Imputed missing numeric values (price, weight) using median calculations
+- Defaulted missing activity metrics to 0
+- Corrected formatting issues (numeric precision, casing, string parsing)
+- Quantified impact of missing year_added values caused by a system defect
+
+**Core SQL Logic**
+
+- Validation checks to identify missing or inconsistent data
+- Data standardisation using CTEs and transformation layers
+- Median-based imputation using percentile_cont
+- Aggregations to analyse pricing distribution by category 
+- Filtering logic to isolate high-demand segments
+
+**Example Queries**
+
 
 
 <p align="center">
   <img src="Ticket-Dashboard.png" width="900">
 </p>
 
-**Data Model**
-
-- Star schema structure linking ticket fact table to dimension tables. Designed to enable efficient filtering and time-based analysis. Data was merged and cleansed in Power Query.
-
-<p align="center">
-  <img src="Data-Modelling.png" width="900">
-
-
 
   
 **Key Insights**
-- Majority of tickets meet SLA for resolution, but assessment within 2 days shows occasional drops (~94% in some months). A KPI alert was created in Power BI Service to notify managers of SLA breaches
-- Ticket volume is relatively stable with seasonal fluctuations around August and December.
-- A small number of team members handle a disproportionate number of tickets
-- Closure rates closely track ticket creation, indicating steady backlog management
-- Tickets were found to be out of SLA incorrectly, due to different SLA definitions between teams.
+
+- Data quality gaps (e.g. missing year_added) introduce risk to reporting accuracy
+- Pricing varies significantly across categories, indicating inconsistent pricing structure
+- Some categories lack balanced price coverage across cost tiers
+- High-demand items are concentrated within specific segments
+- Incomplete attributes reduce confidence in downstream analysis
+
+
 
 **Recommendations**
-- Investigate teams / team members with lower SLA performance to identify root causes of delays
-- Review ticket distribution across employees to ensure balanced workload
-- Analyse periods with SLA dips to determine if driven by volume spikes or complexity
-- Introduce early warnings or alerts for tickets at risk of breaching SLA
-- Introduce a consistent KPI definition across all teams to standardise performance reporting
+
+- Implement validation rules to prevent missing critical attributes
+- Standardise data quality checks across datasets
+- Review pricing structures to ensure balanced coverage across price points
+- Introduce automated monitoring to flag data quality issues
+- Enhance datasets with additional contextual data to improve analysis
 
 
 
 **Skills & Tools demonstrated**
-- Power BI
-- Power Query (to cleanse and merge the data)
-- DAX (measures, calculated columns)
-- Data modelling
-- Interactive dashboards (filters, drill-throughs)
+- SQL (CTEs, aggregations, filtering, window functions)
+- Data Cleaning & Transformation (null handling, standardisation, validation)
+- Data Quality Management (completeness, consistency, integrity checks)
+- Analytical Thinking (segmentation, pattern identification)
+- Business Understanding (data governance, pricing analysis, reporting readiness)
 
 <br>
 <br>
