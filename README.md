@@ -4,7 +4,7 @@ Analytics Portfolio
 
 # Power BI
 
-This repository contains a Power BI project focused on
+This section of the repository contains Power BI projects focused on
 business-oriented data analysis and reporting.
 
 ---
@@ -164,6 +164,12 @@ Data has been anonymised
 <br>
 <br>
 
+# SQL
+
+This section contains a SQL project focused on
+business-oriented data analysis and reporting.
+
+---
 
 ## Product Data Quality & Pricing Analysis
 
