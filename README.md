@@ -200,13 +200,65 @@ Standardised and cleaned the dataset using SQL transformations to ensure consist
 **Example Queries**
 
 
+```SQL
+-- Identify how many records are missing 'year_added' data
+-- This highlights data quality issues that could impact reporting
+SELECT COUNT(*) AS missing_year
+FROM products
+WHERE year_added IS NULL;
 
-<p align="center">
-  <img src="Ticket-Dashboard.png" width="900">
-</p>
+```
+```SQL
 
+-- Clean and standardise dataset
+WITH products_standardised AS (
+    SELECT 
+        product_id,
+        product_type,
+        REPLACE(brand, '-', NULL) AS brand,
+        ROUND(CAST(split_part(weight, ' ', 1) AS numeric), 2) AS weight,
+        ROUND(CAST(price AS numeric), 2) AS price,
+        average_units_sold,
+        year_added,
+        UPPER(stock_location) AS stock_location
+    FROM products
+),
+aggregations AS (
+    SELECT
+        percentile_cont(0.5) WITHIN GROUP (ORDER BY price) AS median_price,
+        percentile_cont(0.5) WITHIN GROUP (ORDER BY weight) AS median_weight
+    FROM products_standardised
+)
+SELECT 
+    product_id,
+    COALESCE(product_type, 'Unknown') AS product_type,
+    COALESCE(brand, 'Unknown') AS brand,
+    COALESCE(weight, median_weight) AS weight,
+    COALESCE(price, median_price) AS price,
+    COALESCE(average_units_sold, 0) AS average_units_sold,
+    COALESCE(year_added, 2022) AS year_added,
+    COALESCE(stock_location, 'Unknown') AS stock_location
+FROM products_standardised
+CROSS JOIN aggregations;
+```
+```SQL
+-- Pricing range by category
+SELECT
+    product_type,
+    MIN(price) AS min_price,
+    MAX(price) AS max_price
+FROM products
+GROUP BY product_type;
 
-  
+```
+```SQL
+-- High-demand segment analysis
+SELECT product_id, price, average_units_sold
+FROM products
+WHERE product_type IN ('Meat', 'Dairy')
+  AND average_units_sold &gt; 10;
+```
+
 **Key Insights**
 
 - Data quality gaps (e.g. missing year_added) introduce risk to reporting accuracy
